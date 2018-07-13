@@ -260,7 +260,7 @@
       <div class="container">
         <div class="heading text-center">
           <h2>Portfolio</h2>
-          <h3> Below is a collection of projects, as well as work experience.</h3>
+          <h3> Below is my work experience, as well as projects.</h3>
         </div>
 
         <div id="grid-gallery" class="grid-gallery">
@@ -268,42 +268,7 @@
             <ul class="grid">
               <li class="grid-sizer"></li>
               <!-- for Masonry column width -->
-              <li>
-                <figure>
-                  <img src="img/work/1.jpg" alt="" />
-                  <figcaption> 
-                    <h3>Stock Market Prediction (Opinion Mining)</h3>
-                    <p>Research Paper</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/2.jpg" alt="" />
-                  <figcaption>
-                    <h3>Sentiment Analysis of Twitter Tweets</h3>
-                    <p>Masters Dissertation</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/3.jpg" alt="" />
-                  <figcaption>
-                    <h3>Cloud Virtual Machine Performance Testing</h3>
-                    <p>Cloud Technologies project</p>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/work/4.jpg" alt="" />
-                  <figcaption>
-                    <h3>Census Data Analysis using R</h3>
-                    <p>Statistics Project</p>
-                  </figcaption>
-                </figure>
-              </li>
+              
               <li>
                 <figure>
                   <img src="img/work/5.jpg" alt="" />
@@ -342,6 +307,42 @@
                   </figcaption>
                 </figure>
               </li>
+              <li>
+                    <figure>
+                      <img src="img/work/1.jpg" alt="" />
+                      <figcaption> 
+                        <h3>Stock Market Prediction (Opinion Mining)</h3>
+                        <p>Research Paper</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="img/work/2.jpg" alt="" />
+                      <figcaption>
+                        <h3>Sentiment Analysis of Twitter Tweets</h3>
+                        <p>Masters Dissertation</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="img/work/3.jpg" alt="" />
+                      <figcaption>
+                        <h3>Cloud Virtual Machine Performance Testing</h3>
+                        <p>Cloud Technologies project</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <img src="img/work/4.jpg" alt="" />
+                      <figcaption>
+                        <h3>Census Data Analysis using R</h3>
+                        <p>Statistics Project</p>
+                      </figcaption>
+                    </figure>
+                  </li>
 
             </ul>
           </section>
@@ -537,7 +538,8 @@
           <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
           <li><a href="#"><i class="fa fa-flickr"></i></a></li>
         </ul>
-        <p></p>
+        <p align="left">Copyright © Monika Kumar 2018</p>
+        <p align="right">Made using Bootstrap agency theme</p>
 
       </div>
     </section>
@@ -581,23 +583,8 @@
           topMargin: 'auto'
         });
       });
-      //Google Map
-      var get_latitude = $('#google-map').data('latitude');
-      var get_longitude = $('#google-map').data('longitude');
-      function initialize_google_map() {
-        var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-        var mapOptions = {
-          zoom: 14,
-          scrollwheel: false,
-          center: myLatlng
-        };
-        var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-        var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map
-        });
-      }
-      google.maps.event.addDomListener(window, 'load', initialize_google_map);
+      
+      
     });
   </script>
   <script src="contactform/contactform.js"></script>
